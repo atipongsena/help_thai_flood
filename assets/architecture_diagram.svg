@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="blueCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.3" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1000" height="480" rx="16" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="500" y="42" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">HelpThai Flood Relief - End-to-End System Architecture</text>
+  <text x="500" y="65" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">From Disaster Social Signals to Real-Time AI Emergency Dispatch</text>
+
+  <!-- Section 1: Data Ingestion -->
+  <g transform="translate(40, 95)" filter="url(#dropShadow)">
+    <rect width="190" height="340" rx="12" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+    <rect width="190" height="40" rx="12" fill="url(#blueCard)"/>
+    <text x="95" y="26" fill="#38bdf8" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle">1. Data Ingestion</text>
+
+    <!-- Sub-cards -->
+    <rect x="15" y="55" width="160" height="58" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="25" y="77" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">SOS API / JITASA</text>
+    <text x="25" y="96" fill="#94a3b8" font-family="sans-serif" font-size="10">26,258 citizen posts</text>
+
+    <rect x="15" y="125" width="160" height="58" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="25" y="147" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Tact AI &amp; Hatyai Connext</text>
+    <text x="25" y="166" fill="#94a3b8" font-family="sans-serif" font-size="10">Community crisis feeds</text>
+
+    <rect x="15" y="195" width="160" height="58" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="25" y="217" fill="#f1f5f9" font-family="sans-serif" font-size="12" font-weight="600">Social / Volunteers</text>
+    <text x="25" y="236" fill="#94a3b8" font-family="sans-serif" font-size="10">People's Party &amp; Web form</text>
+
+    <!-- Info Pill -->
+    <rect x="15" y="270" width="160" height="50" rx="8" fill="#0369a1" fill-opacity="0.2" stroke="#0ea5e9" stroke-width="1"/>
+    <text x="95" y="292" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">Input Features:</text>
+    <text x="95" y="308" fill="#cbd5e1" font-family="sans-serif" font-size="10" text-anchor="middle">Text, Location, Phone, Household</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <path d="M 235 265 L 275 265" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow)" stroke-dasharray="4 2"/>
+  <polygon points="275,260 285,265 275,270" fill="#38bdf8"/>
+
+  <!-- Section 2: AI & NLP Engine -->
+  <g transform="translate(285, 95)" filter="url(#dropShadow)">
+    <rect width="250" height="340" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="1.5"/>
+    <rect width="250" height="40" rx="12" fill="#6b21a8" fill-opacity="0.3"/>
+    <text x="125" y="26" fill="#c084fc" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle">2. AI &amp; NLP Pipeline Engine</text>
+
+    <!-- Sub components -->
+    <rect x="15" y="55" width="220" height="50" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="25" y="75" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="600">PyThaiNLP 24-Pipeline Prep</text>
+    <text x="25" y="93" fill="#94a3b8" font-family="sans-serif" font-size="10">Clean • Norm • Stopwords • Lemma</text>
+
+    <rect x="15" y="115" width="220" height="70" rx="8" fill="#581c87" fill-opacity="0.3" stroke="#a855f7"/>
+    <text x="25" y="135" fill="#f3e8ff" font-family="sans-serif" font-size="12" font-weight="700">WangchanBERTa Core (RTX 5090)</text>
+    <text x="25" y="153" fill="#d8b4fe" font-family="sans-serif" font-size="10">Pretrained Thai Transformer</text>
+    <text x="25" y="170" fill="#a855f7" font-family="sans-serif" font-size="10">3 Multi-Task Fine-Tuned Heads</text>
+
+    <!-- 3 Task badges -->
+    <rect x="15" y="195" width="220" height="36" rx="6" fill="#0f172a" stroke="#f43f5e"/>
+    <text x="25" y="213" fill="#fda4af" font-family="sans-serif" font-size="10" font-weight="600">Urgency: P1, P2, P3</text>
+    <text x="180" y="213" fill="#f43f5e" font-family="sans-serif" font-size="10" font-weight="700">F1 95.8%</text>
+    <text x="25" y="224" fill="#94a3b8" font-family="sans-serif" font-size="8">Critical vs Urgent vs General</text>
+
+    <rect x="15" y="238" width="220" height="36" rx="6" fill="#0f172a" stroke="#10b981"/>
+    <text x="25" y="256" fill="#6ee7b7" font-family="sans-serif" font-size="10" font-weight="600">17 Multi-label Risk Flags</text>
+    <text x="180" y="256" fill="#10b981" font-family="sans-serif" font-size="10" font-weight="700">Acc 99.5%</text>
+    <text x="25" y="267" fill="#94a3b8" font-family="sans-serif" font-size="8">Bedridden, Infant, Water Level, Medical</text>
+
+    <rect x="15" y="281" width="220" height="36" rx="6" fill="#0f172a" stroke="#f59e0b"/>
+    <text x="25" y="299" fill="#fde68a" font-family="sans-serif" font-size="10" font-weight="600">5 Resource Classifiers</text>
+    <text x="180" y="299" fill="#f59e0b" font-family="sans-serif" font-size="10" font-weight="700">Rec 93.8%</text>
+    <text x="25" y="310" fill="#94a3b8" font-family="sans-serif" font-size="8">Boats, Food, Medical Evac, Power</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <polygon points="540,260 550,265 540,270" fill="#a855f7"/>
+  <path d="M 535 265 L 550 265" stroke="#a855f7" stroke-width="2.5"/>
+
+  <!-- Section 3: Cloud & Backend -->
+  <g transform="translate(555, 95)" filter="url(#dropShadow)">
+    <rect width="185" height="340" rx="12" fill="#1e293b" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="185" height="40" rx="12" fill="#065f46" fill-opacity="0.4"/>
+    <text x="92" y="26" fill="#34d399" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle">3. Cloud &amp; APIs</text>
+
+    <rect x="15" y="55" width="155" height="60" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="25" y="77" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="600">FastAPI Model Server</text>
+    <text x="25" y="93" fill="#34d399" font-family="sans-serif" font-size="9">Google Cloud Run</text>
+    <text x="25" y="106" fill="#94a3b8" font-family="sans-serif" font-size="9">Vertex AI Inference</text>
+
+    <rect x="15" y="125" width="155" height="60" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="25" y="147" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="600">Express / Node.js</text>
+    <text x="25" y="163" fill="#94a3b8" font-family="sans-serif" font-size="9">Case &amp; Dispatch Logic</text>
+    <text x="25" y="176" fill="#94a3b8" font-family="sans-serif" font-size="9">PostGIS / PostgreSQL</text>
+
+    <rect x="15" y="195" width="155" height="60" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="25" y="217" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="600">Cloud Build CI/CD</text>
+    <text x="25" y="233" fill="#94a3b8" font-family="sans-serif" font-size="9">Automated Docker build</text>
+    <text x="25" y="246" fill="#94a3b8" font-family="sans-serif" font-size="9">&amp; zero-downtime deploy</text>
+
+    <rect x="15" y="265" width="155" height="55" rx="8" fill="#065f46" fill-opacity="0.2" stroke="#10b981" stroke-width="1"/>
+    <text x="92" y="287" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="middle">API Docs</text>
+    <text x="92" y="305" fill="#cbd5e1" font-family="sans-serif" font-size="9" text-anchor="middle">OpenAPI Swagger UI</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <polygon points="745,260 755,265 745,270" fill="#10b981"/>
+  <path d="M 740 265 L 755 265" stroke="#10b981" stroke-width="2.5"/>
+
+  <!-- Section 4: Web Application & Frontline -->
+  <g transform="translate(760, 95)" filter="url(#dropShadow)">
+    <rect width="200" height="340" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5"/>
+    <rect width="200" height="40" rx="12" fill="#92400e" fill-opacity="0.3"/>
+    <text x="100" y="26" fill="#fbbf24" font-family="sans-serif" font-size="14" font-weight="700" text-anchor="middle">4. Web App &amp; Dispatch</text>
+
+    <rect x="15" y="55" width="170" height="75" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="25" y="75" fill="#fde68a" font-family="sans-serif" font-size="12" font-weight="600">helpthai.vercel.app</text>
+    <text x="25" y="93" fill="#cbd5e1" font-family="sans-serif" font-size="10">React 18 + Vite + TS</text>
+    <text x="25" y="108" fill="#94a3b8" font-family="sans-serif" font-size="9">• Leaflet Cluster Map</text>
+    <text x="25" y="121" fill="#94a3b8" font-family="sans-serif" font-size="9">• Realtime Triage Stream</text>
+
+    <rect x="15" y="140" width="170" height="85" rx="8" fill="#0f172a" stroke="#334155"/>
+    <text x="25" y="160" fill="#f1f5f9" font-family="sans-serif" font-size="11" font-weight="600">End-User Features</text>
+    <text x="25" y="178" fill="#94a3b8" font-family="sans-serif" font-size="9">✓ Heatmap &amp; Urgency Pins</text>
+    <text x="25" y="193" fill="#94a3b8" font-family="sans-serif" font-size="9">✓ Multi-Risk Tag Filters</text>
+    <text x="25" y="208" fill="#94a3b8" font-family="sans-serif" font-size="9">✓ Mobile Rescue View</text>
+
+    <rect x="15" y="235" width="170" height="85" rx="8" fill="#78350f" fill-opacity="0.3" stroke="#f59e0b"/>
+    <text x="25" y="255" fill="#fde68a" font-family="sans-serif" font-size="11" font-weight="700">Beneficiaries</text>
+    <text x="25" y="273" fill="#cbd5e1" font-family="sans-serif" font-size="9">• Rescue Teams &amp; Boats</text>
+    <text x="25" y="288" fill="#cbd5e1" font-family="sans-serif" font-size="9">• Emergency Volunteers</text>
+    <text x="25" y="303" fill="#cbd5e1" font-family="sans-serif" font-size="9">• Local Disaster Ops Centers</text>
+  </g>
+
+</svg>

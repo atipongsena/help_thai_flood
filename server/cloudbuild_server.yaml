@@ -1,0 +1,5 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/my-flood-project-480015/flood-server', '.']
+images:
+  - 'gcr.io/my-flood-project-480015/flood-server'

@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 950 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="950" height="480" rx="16" fill="url(#bgGrad3)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Header -->
+  <text x="475" y="40" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" text-anchor="middle">WangchanBERTa Multi-Task Evaluation &amp; Benchmarks</text>
+  <text x="475" y="65" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" text-anchor="middle">Trained on RTX 5090 • 21,006 Train Samples • 5,252 Test Samples (20% Holdout)</text>
+
+  <!-- Metric Card 1: Risk Classification -->
+  <g transform="translate(45, 90)">
+    <rect width="265" height="350" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+    <rect width="265" height="36" rx="12" fill="#065f46" fill-opacity="0.4"/>
+    <text x="132" y="24" fill="#34d399" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">Multi-label Risk Flags (17 Tags)</text>
+
+    <!-- Score Big -->
+    <text x="132" y="75" fill="#10b981" font-family="sans-serif" font-size="32" font-weight="800" text-anchor="middle">99.50%</text>
+    <text x="132" y="93" fill="#6ee7b7" font-family="sans-serif" font-size="11" text-anchor="middle">Test Accuracy</text>
+
+    <!-- Bar Metrics -->
+    <g transform="translate(20, 115)">
+      <text x="0" y="12" fill="#94a3b8" font-family="sans-serif" font-size="11">Precision</text>
+      <text x="225" y="12" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="end">98.56%</text>
+      <rect x="0" y="18" width="225" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="18" width="221" height="6" rx="3" fill="#10b981"/>
+
+      <text x="0" y="42" fill="#94a3b8" font-family="sans-serif" font-size="11">Recall</text>
+      <text x="225" y="42" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="end">97.23%</text>
+      <rect x="0" y="48" width="225" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="48" width="218" height="6" rx="3" fill="#10b981"/>
+
+      <text x="0" y="72" fill="#94a3b8" font-family="sans-serif" font-size="11">F1-Score</text>
+      <text x="225" y="72" fill="#34d399" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="end">97.89%</text>
+      <rect x="0" y="78" width="225" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="78" width="220" height="6" rx="3" fill="#34d399"/>
+    </g>
+
+    <!-- Tags List -->
+    <rect x="15" y="225" width="235" height="105" rx="8" fill="#1e293b" stroke="#334155"/>
+    <text x="25" y="245" fill="#94a3b8" font-family="sans-serif" font-size="10" font-weight="600">Sample Detected Tags:</text>
+    <text x="25" y="265" fill="#cbd5e1" font-family="sans-serif" font-size="9">✓ has_bedridden (ผู้ป่วยติดเตียง)</text>
+    <text x="25" y="280" fill="#cbd5e1" font-family="sans-serif" font-size="9">✓ mentions_water_level (ระดับน้ำ)</text>
+    <text x="25" y="295" fill="#cbd5e1" font-family="sans-serif" font-size="9">✓ has_infants / children (เด็กเล็ก)</text>
+    <text x="25" y="310" fill="#cbd5e1" font-family="sans-serif" font-size="9">✓ needs_medical_devices (ออกซิเจน)</text>
+  </g>
+
+  <!-- Metric Card 2: Urgency Classification -->
+  <g transform="translate(340, 90)">
+    <rect width="265" height="350" rx="12" fill="#0f172a" stroke="#f43f5e" stroke-width="1.5"/>
+    <rect width="265" height="36" rx="12" fill="#881337" fill-opacity="0.4"/>
+    <text x="132" y="24" fill="#fb7185" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">Urgency Multi-Class (P1/P2/P3)</text>
+
+    <!-- Score Big -->
+    <text x="132" y="75" fill="#f43f5e" font-family="sans-serif" font-size="32" font-weight="800" text-anchor="middle">95.84%</text>
+    <text x="132" y="93" fill="#fda4af" font-family="sans-serif" font-size="11" text-anchor="middle">Weighted F1-Score</text>
+
+    <!-- Bar Metrics -->
+    <g transform="translate(20, 115)">
+      <text x="0" y="12" fill="#94a3b8" font-family="sans-serif" font-size="11">Accuracy</text>
+      <text x="225" y="12" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="end">95.79%</text>
+      <rect x="0" y="18" width="225" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="18" width="215" height="6" rx="3" fill="#f43f5e"/>
+
+      <text x="0" y="42" fill="#94a3b8" font-family="sans-serif" font-size="11">Precision</text>
+      <text x="225" y="42" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="end">95.86%</text>
+      <rect x="0" y="48" width="225" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="48" width="215" height="6" rx="3" fill="#f43f5e"/>
+
+      <text x="0" y="72" fill="#94a3b8" font-family="sans-serif" font-size="11">Recall</text>
+      <text x="225" y="72" fill="#fda4af" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="end">95.82%</text>
+      <rect x="0" y="78" width="225" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="78" width="215" height="6" rx="3" fill="#fb7185"/>
+    </g>
+
+    <!-- Priority distribution breakdown -->
+    <rect x="15" y="225" width="235" height="105" rx="8" fill="#1e293b" stroke="#334155"/>
+    <text x="25" y="245" fill="#94a3b8" font-family="sans-serif" font-size="10" font-weight="600">Distribution in 26,258 dataset:</text>
+    <text x="25" y="265" fill="#ef4444" font-family="sans-serif" font-size="9">🔴 P1 (วิกฤต/เสี่ยงชีวิต): 8,733 posts</text>
+    <text x="25" y="285" fill="#f97316" font-family="sans-serif" font-size="9">🟠 P2 (เร่งด่วน/ต้องการช่วย): 9,089 posts</text>
+    <text x="25" y="305" fill="#06b6d4" font-family="sans-serif" font-size="9">🔵 P3 (ทั่วไป/ประสานงาน): 8,436 posts</text>
+  </g>
+
+  <!-- Metric Card 3: Resource Classification -->
+  <g transform="translate(635, 90)">
+    <rect width="265" height="350" rx="12" fill="#0f172a" stroke="#0ea5e9" stroke-width="1.5"/>
+    <rect width="265" height="36" rx="12" fill="#0369a1" fill-opacity="0.4"/>
+    <text x="132" y="24" fill="#38bdf8" font-family="sans-serif" font-size="13" font-weight="700" text-anchor="middle">Resource Classification (5 Types)</text>
+
+    <!-- Score Big -->
+    <text x="132" y="75" fill="#0ea5e9" font-family="sans-serif" font-size="32" font-weight="800" text-anchor="middle">96.82%</text>
+    <text x="132" y="93" fill="#7dd3fc" font-family="sans-serif" font-size="11" text-anchor="middle">Test Accuracy</text>
+
+    <!-- Bar Metrics -->
+    <g transform="translate(20, 115)">
+      <text x="0" y="12" fill="#94a3b8" font-family="sans-serif" font-size="11">Recall (Coverage)</text>
+      <text x="225" y="12" fill="#38bdf8" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="end">93.75%</text>
+      <rect x="0" y="18" width="225" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="18" width="210" height="6" rx="3" fill="#0ea5e9"/>
+
+      <text x="0" y="42" fill="#94a3b8" font-family="sans-serif" font-size="11">Precision</text>
+      <text x="225" y="42" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="end">92.76%</text>
+      <rect x="0" y="48" width="225" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="48" width="208" height="6" rx="3" fill="#0ea5e9"/>
+
+      <text x="0" y="72" fill="#94a3b8" font-family="sans-serif" font-size="11">F1-Score</text>
+      <text x="225" y="72" fill="#e2e8f0" font-family="sans-serif" font-size="11" font-weight="600" text-anchor="end">93.25%</text>
+      <rect x="0" y="78" width="225" height="6" rx="3" fill="#334155"/>
+      <rect x="0" y="78" width="209" height="6" rx="3" fill="#38bdf8"/>
+    </g>
+
+    <!-- Resource items -->
+    <rect x="15" y="225" width="235" height="105" rx="8" fill="#1e293b" stroke="#334155"/>
+    <text x="25" y="245" fill="#94a3b8" font-family="sans-serif" font-size="10" font-weight="600">Classified Resources:</text>
+    <text x="25" y="265" fill="#cbd5e1" font-family="sans-serif" font-size="9">🚤 rescue_boat (เรือกู้ภัย/อพยพ: 22k+)</text>
+    <text x="25" y="280" fill="#cbd5e1" font-family="sans-serif" font-size="9">🍱 food_drop (อาหาร/น้ำดื่ม: 3.4k+)</text>
+    <text x="25" y="295" fill="#cbd5e1" font-family="sans-serif" font-size="9">🚑 medical_evac (เคลื่อนย้ายผู้ป่วย)</text>
+    <text x="25" y="310" fill="#cbd5e1" font-family="sans-serif" font-size="9">⚡ power_supply / body_recovery</text>
+  </g>
+</svg>

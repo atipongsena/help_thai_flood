@@ -1,0 +1,119 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+**/dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Node.js & Web builds
+node_modules/
+**/node_modules/
+.vercel
+**/.vercel
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archives & Large Compressed Dumps
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.tar
+help_thai_flood.zip
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Logs
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environments
+.env
+.env.*
+!.env.example
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Large Datasets
+data/*.db
+data/*.db.*
+data/*.csv
+data/*.json
+data/*.jsonl
+data/*.parquet
+data/*.bak
+data/raw_posts.jsonl
+data/all_posts_*
+data/Train.csv
+data/Test.csv
+!data/urls.txt
+!data/sample_posts.txt
+
+# Model weights and artifacts (keep repo lightweight)
+models/*.joblib
+models/*.model
+models/bert_*
+models/bert_flood_model/
+models/bert_priority/
+models/bert_resource_tags/
+models/bert_risk_flags/
+models/bert_urgency/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.onnx

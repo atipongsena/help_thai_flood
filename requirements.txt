@@ -1,0 +1,44 @@
+# Thai Flood Relief NLP Pipeline - Requirements
+# Core dependencies for data collection, preprocessing, and model training
+
+# Data collection & web scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Database
+# SQLite is built-in, no additional package needed
+
+# Thai NLP
+pythainlp>=4.0.0
+
+# Machine Learning - Classical
+scikit-learn>=1.3.0
+#gensim>=4.3.0
+joblib>=1.3.0
+
+# Deep Learning - Transformers (Thai BERT)
+torch>=2.0.0
+transformers>=4.35.0
+datasets>=2.14.0
+accelerate>=0.24.0
+sentencepiece>=0.1.99
+
+# API Backend
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.5.0
+python-multipart>=0.0.6
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+
+# Optional: for Jupyter/Colab development
+jupyter>=1.0.0
+ipywidgets>=8.0.0
+
