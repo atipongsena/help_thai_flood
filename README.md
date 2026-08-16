@@ -15,7 +15,8 @@
 <br/>
 
 <p align="center">
-  <img src="assets/hero_banner.png" alt="HelpThai Flood AI Hero Banner" width="100%" style="border-radius: 12px; box-shadow: 0 8px 30px rgba(0,0,0,0.3);"/>
+  <img width="1054" height="609" alt="image" src="https://github.com/user-attachments/assets/be408ed0-ff3f-4747-ae66-6cda101624d1" />
+
 </p>
 
 <p align="center">
@@ -51,7 +52,10 @@
 ## 🖥️ ภาพรวมระบบและหน้าจอการทำงาน (Application Showcase)
 
 <div align="center">
-  <img src="assets/dashboard_preview.png" alt="HelpThai Dispatch Center Dashboard" width="100%" style="border-radius: 10px;"/>
+  <img width="1054" height="609" alt="image" src="https://github.com/user-attachments/assets/4b47be5f-79de-4bb4-903f-29434716f682" />
+  <img width="1417" height="505" alt="image" src="https://github.com/user-attachments/assets/20d41489-d639-4ec8-a45c-39ff14c009a1" />
+
+
   <p><i>ศูนย์สั่งการกู้ภัยอัจฉริยะ (HelpThai Flood Emergency Dispatch Center) พร้อมระบบ Pin Clustering และการแท็กเคสอัตโนมัติ</i></p>
 </div>
 
@@ -299,18 +303,6 @@ gcloud builds submit --config cloudbuild_api.yaml
 
 ### 2. Deploy Web Frontend ไปยัง Vercel
 เชื่อมต่อ GitHub Repository เข้ากับ Vercel โดยตั้งค่า Root Directory เป็น `web/`
-
----
-
-## 👥 ข้อมูลผู้จัดทำและโครงงานการศึกษา (Project Credits)
-
-**โครงงานระบบคัดกรองข้อความขอช่วยเหลือผู้ประสบภัยน้ำท่วม (HelpFlood Project)**  
-เป็นส่วนหนึ่งของรายวิชา **Text Processing (ปีการศึกษา 2568 ภาคเรียนที่ 1)**  
-สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นวิทยาการข้อมูลและความมั่นคงปลอดภัยไซเบอร์  
-คณะเทคโนโลยีสารสนเทศและนวัตกรรม **มหาวิทยาลัยกรุงเทพ (Bangkok University)**
-
-- **ผู้จัดทำ:** นายอาทิพงศ์ เสนา (รหัสนักศึกษา: 1650708579, Section: 427B, เลขที่: 22)
-- **อาจารย์ผู้สอน / ที่ปรึกษา:** ผู้ช่วยศาสตราจารย์ ดร.ณัฐพงษ์ แสนจันทร์
 
 ---
 
