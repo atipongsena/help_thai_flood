@@ -26,7 +26,7 @@
 
 ---
 
-### 🌐 Live Production Links
+### 🌐 Live Production Links(ไม่ได้เปิดต่อเพราะผ่านช่วงวิกฤิตไปแล้ว)
 
 | Service | Link | Description |
 | :--- | :--- | :--- |
